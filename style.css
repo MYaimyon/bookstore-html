@@ -1,0 +1,134 @@
+/* ==========================
+   상단 메뉴 전체 영역
+   (SNS 아이콘 + 회원 메뉴를 포함)
+   ========================== */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#f5f5f5;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* SNS 아이콘 영역 */
+.sns-links a{
+    margin-right: 10px;   /* 아이콘 간격 */
+}
+
+.sns-links img{
+    vertical-align: middle; /* 아이콘 세로 중앙 정렬 */
+}
+
+/* 회원 메뉴 영역 (회원가입, 로그인, 검색) */
+.user-menu a, .user-menu span{
+    margin-right: 10px;    /* 메뉴 항목 간격 */
+    text-decoration: none;
+    color: #333;
+}
+
+.user-menu input{
+    padding: 5px;
+    font-size: 14px;
+}
+
+.user-menu button{
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ==========================
+   네비게이션 영역
+   (사이트 제목 + 메뉴)
+   ========================== */
+nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    height: 60px;
+}
+
+/* 사이트 제목 */
+nav h1{
+    font-size: 35px;
+    margin: 0;
+    color: #333;
+    margin-right: 100px; /* 메뉴와 간격 */
+}
+
+/* 메뉴 영역 */
+nav .nav-menu{
+    display: flex;
+    gap: 180px;          /* 메뉴 항목 간격 */
+}
+
+/* 메뉴 항목 스타일 */
+nav .nav-menu span{
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+/* 메뉴 hover 효과 */
+nav .nav-menu span:hover {
+  color: #007BFF;
+}
+
+.book-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;          /* 텍스트와 이미지 사이 간격 */
+    padding: 20px;
+}
+
+/* 텍스트 영역 */
+.book-text {
+    max-width: 400px;   /* 텍스트 폭 제한 */
+}
+
+/* 이미지 영역 - 오른쪽 화면 전체 채움 */
+.book-image {
+    flex: 1;            /* 남는 공간 모두 차지 */
+}
+
+.book-image img {
+    width: 50%;        /* 부모 영역 폭 채움 */
+    height: auto;       /* 비율 유지 */
+    object-fit: cover;  /* 이미지 크기 맞춤 */
+}
+
+/* 이전 버튼 */
+.book-info .prev {
+    position: fixed;
+    left: 20px;              /* 화면 안쪽으로 밀어냄 */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 다음 버튼 - 오른쪽 사이드 */
+.book-info .next {
+    position: fixed;
+    right: 20px;             /* 화면 안쪽으로 밀어냄 */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 버튼 안 이미지 */
+.book-info button img {
+    width: 24px;
+    height: 24px;
+}
+
