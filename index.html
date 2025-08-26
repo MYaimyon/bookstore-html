@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- sec menu = div1 sns로고 링크 | div2 회원가입(sign up) / 로그인 / 검색 -->
+<section class = "top-bar">
+<!-- div1: SNS 로고 링크 -->
+    <div class ="sns-links">
+        <!-- 인스타 로고 -->
+        <a href="https://www.instagram.com/kyobobook_official/" target="_blank">
+            <img src="images/instagram.png" alt="instagram 로고" width="24">
+        </a>
+        <!-- 페이스북 로고 -->
+        <a href="https://www.facebook.com/kyobobookonline/?locale=ko_KR" target="_blank">
+            <img src="images/facebook.png" alt="facebook 로고" width="24">
+        </a>
+        <!-- 유튜브 로고 -->
+        <a href="https://www.youtube.com/c/kbooknews" target="_blank">
+            <img src="images/youtube.png" alt="youtube 로고" width="24">
+        </a>
+    </div>
+
+<!--div2: 회원가입/로그인/검색 -->
+    <div class="user-menu">
+        <a href="signup.html">회원가입</a>
+        <span>로그인</span>
+        <input type="text" placeholder="검색어를 입력하세요">
+        <button>검색</button>
+    </div>
+</section>
+
+<!-- nav 구성 = h1 서점 title text | div menu : home / about / shop / contact / articles   -->
+<nav>
+    <h1>My Online Bookstore</h1>
+    <div class = "nav-menu">
+        <span>Home</span>
+        <span>About</span>
+        <span>Shop</span>
+        <span>Contact</span>
+        <span>Articles</span>
+    </div>
+</nav>
+
+<!-- sec book_info 구성 = div : book info text /recommend book info img | button X 2  -->
+<section class = "book-info">
+    <!-- 이전 버튼 -->
+    <button class="prev">
+        <img src="images/arrow-left.png" alt="이전 책" width="24" height="24">
+    </button>
+    <!-- 책 정보 텍스트 -->
+    <div class = "book-text">
+        <h2>책 제목</h2>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <!-- 책 이미지 -->
+    <div class ="book-image">
+        <img src="images/book_example.jpg" alt="책 이미지" width="300">
+    </div>
+
+    <!-- 다음 버튼 -->
+    <button class="next">
+        <img src="images/arrow-right.png" alt="다음 책" width="24" height="24">
+    </button>
+</section>
+</body>
+</html>
