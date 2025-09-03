@@ -320,3 +320,40 @@ nav .nav-menu span:hover {
 .signup-title a:hover {
     color: #007BFF; /* hover 시 색상 변경 */
 }
+
+/* ==========================
+   푸터 영역
+   ========================== */
+.footer {
+    background-color: #EDEAE3; /* 본 배경과 어울리는 연한 톤 */
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: #555;
+}
+
+/* 회사 소개 */
+.footer-about {
+    margin: 15px 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* 하단 링크 */
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #007BFF; /* 네비 hover와 통일 */
+}
